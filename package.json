@@ -1,6 +1,6 @@
 {
   "name": "ukko_cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
     "ronin": "^0.1.2",
     "ukko": "^0.0.2"
@@ -9,7 +9,7 @@
     "test": "grunt test"
   },
   "bin": {
-    "test": "./bin/test"
+    "test": "./bin/ukko"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
