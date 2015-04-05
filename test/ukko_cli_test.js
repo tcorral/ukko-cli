@@ -30,7 +30,7 @@ exports.ukko = {
     installAllRepos: function (test) {
         var install = new Install();
         console.log(install.run);
-        install.run(undefined, undefined, "test/fixtures/config.json", function () {
+        install.run("test/fixtures/config.json", undefined, undefined, function () {
             compareContent('repos', 'installAllRepos', test);
             clean();
             test.done();
@@ -39,8 +39,8 @@ exports.ukko = {
     updateAllRepos: function (test) {
         var install = new Install();
         var update = new Update();
-        install.run(undefined, undefined, "test/fixtures/config.json", function () {
-            update.run(undefined, undefined, "test/fixtures/config.json", function () {
+        install.run("test/fixtures/config.json", undefined, undefined, function () {
+            update.run("test/fixtures/config.json", undefined, undefined, function () {
                 compareContent('repos', 'updateAllRepos', test);
                 clean();
                 test.done();
@@ -49,7 +49,7 @@ exports.ukko = {
     },
     installOneRepo: function (test){
         var install = new Install();
-        install.run("test/generated/repos/airbnb/javascript", undefined, "test/fixtures/config.json", function () {
+        install.run("test/fixtures/config.json", "test/generated/repos/airbnb/javascript", undefined, function () {
             compareContent('repos/airbnb/javascript', 'installOneRepo', test);
             clean();
             test.done();
@@ -58,8 +58,8 @@ exports.ukko = {
     updateOneRepo:function (test) {
         var install = new Install();
         var update = new Update();
-        install.run(undefined, undefined, "test/fixtures/config.json", function () {
-            update.run(undefined, undefined, "test/fixtures/config.json", function () {
+        install.run("test/fixtures/config.json", undefined, undefined, function () {
+            update.run("test/fixtures/config.json", undefined, undefined, function () {
                 compareContent('repos/airbnb/javascript', 'updateOneRepo', test);
                 clean();
                 test.done();

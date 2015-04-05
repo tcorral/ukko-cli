@@ -4,16 +4,7 @@ var ukko = require('ukko');
 var Install = Command.extend({
     desc: 'Command to install ',
 
-    options: {
-        repos: 'string',
-        configPath: 'string',
-        force: {
-            type: 'boolean',
-            alias: 'f'
-        }
-    },
-
-    run: function (repos, force,configPath, fpCallback) {
+    run: function (configPath, repos, force, fpCallback) {
         ukko.installOrUpdate({
             repos: repos,
             force: force,

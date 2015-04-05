@@ -12,5 +12,11 @@
         "bower_components",
         "test",
         "tests"
-    ]
+    ],
+    "installed": {
+        "test__generated__repos__airbnb__javascript": "https://github.com/airbnb/javascript.git",
+        "test__generated__repos__tcorral__ddpp": "https://github.com/tcorral/Design-Patterns-in-Javascript/archive/master.zip",
+        "test__generated__repos__airbnb__javascript2": "https://github.com/airbnb/javascript.git",
+        "test__generated__repos__airbnb__javascript3": "https://github.com/airbnb/javascript.git"
+    }
 }
