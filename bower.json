@@ -1,0 +1,16 @@
+{
+    "name": "side_ng3",
+    "main": "index.js",
+    "version": "0.0.0",
+    "authors": [
+        "tomascorralcasas <amischol@gmail.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
