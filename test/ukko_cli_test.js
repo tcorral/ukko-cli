@@ -17,7 +17,7 @@ var compareContent = function (repoPath, subFolder, test) {
     var pathGenRepos = path.join(process.cwd(), "test", "generated", repoPath);
     var expectedRepos = path.join(process.cwd(), "test", "expected", subFolder, repoPath);
     grunt.file.recurse( pathGenRepos, function (abspath, rootdir, subdir, filename) {
-        if(filename !== '.bower.json'){
+        if(filename !== '.bower.json' && filename !== 'error.log' && filename !== 'out.log'){
             var genContent = grunt.file.read(abspath);
             var expPath = abspath.replace(pathGenRepos, expectedRepos);
             var expContent = grunt.file.read(expPath);
