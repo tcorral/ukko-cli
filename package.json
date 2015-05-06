@@ -1,9 +1,9 @@
 {
   "name": "ukko-cli",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "dependencies": {
     "ronin": "^0.1.2",
-    "ukko": "~0.0.21"
+    "ukko": "~0.0.22"
   },
   "scripts": {
     "test": "grunt test"
