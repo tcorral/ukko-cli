@@ -1,6 +1,6 @@
 {
   "name": "ukko-cli",
-  "version": "0.0.16",
+  "version": "0.0.18",
   "dependencies": {
     "ronin": "^0.1.2",
     "ukko": "~0.0.30"
