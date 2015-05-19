@@ -3,7 +3,7 @@
   "version": "0.0.16",
   "dependencies": {
     "ronin": "^0.1.2",
-    "ukko": "~0.0.26"
+    "ukko": "~0.0.30"
   },
   "scripts": {
     "test": "grunt test"
